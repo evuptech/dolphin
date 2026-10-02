@@ -125,7 +125,7 @@ describe('onboarding feature setup runner', () => {
 
     expect(text).toBe(ALL_SKILL_INSTALL_COMMAND)
     expect(text).toBe(
-      'npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli --skill computer-use --skill orchestration --skill dolphin-linear --global'
+      'npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli --skill computer-use --skill orchestration --skill dolphin-linear --global'
     )
   })
 

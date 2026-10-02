@@ -101,7 +101,7 @@ export function LinkRoutingPreferenceDialogProvider({
     void requestPreference({
       openLinksInAppDefault: previewDefault === 'dolphin',
       preview: true,
-      url: 'https://github.com/GussCloud/dolphin/pull/1234'
+      url: 'https://github.com/evuptech/dolphin/pull/1234'
     })
   }, [requestPreference])
 

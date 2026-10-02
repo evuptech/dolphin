@@ -108,7 +108,7 @@ describe('UpdateCard Windows signature failures', () => {
     expect(screen.queryByText(message)).toBeNull()
 
     fireEvent.click(screen.getByRole('button', { name: 'Check official releases' }))
-    expect(openUrl).toHaveBeenCalledWith('https://github.com/GussCloud/dolphin/releases')
+    expect(openUrl).toHaveBeenCalledWith('https://github.com/evuptech/dolphin/releases')
     expect(openUrl).not.toHaveBeenCalledWith(expect.stringContaining('/tag/'))
   })
 
@@ -165,7 +165,7 @@ describe('UpdateCard hourly builds', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Release notes' }))
     expect(openUrl).toHaveBeenCalledWith(
-      'https://github.com/GussCloud/dolphin-hourly/releases/tag/v1.4.160-hourly.202607281400'
+      'https://github.com/evuptech/dolphin-hourly/releases/tag/v1.4.160-hourly.202607281400'
     )
   })
 })
@@ -249,7 +249,7 @@ describe('UpdateCard Linux package-install recovery', () => {
     expect(screen.getByText('Manual Install Required')).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Download Manually' }))
     expect(openUrl).toHaveBeenCalledWith(
-      'https://github.com/GussCloud/dolphin/releases/tag/v1.4.200'
+      'https://github.com/evuptech/dolphin/releases/tag/v1.4.200'
     )
   })
 
@@ -259,7 +259,7 @@ describe('UpdateCard Linux package-install recovery', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Download Manually' }))
     expect(openUrl).toHaveBeenCalledWith(
-      'https://github.com/GussCloud/dolphin/releases/tag/v1.4.200'
+      'https://github.com/evuptech/dolphin/releases/tag/v1.4.200'
     )
   })
 
@@ -304,7 +304,7 @@ describe('UpdateCard Linux package-install recovery', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Download Manually' }))
     expect(openUrl).toHaveBeenCalledWith(
-      'https://github.com/GussCloud/dolphin/releases/tag/v1.4.200'
+      'https://github.com/evuptech/dolphin/releases/tag/v1.4.200'
     )
   })
 
@@ -345,7 +345,7 @@ describe('UpdateCard Linux package-install recovery', () => {
     expect(screen.queryByRole('button', { name: 'Retry Download' })).toBeNull()
     fireEvent.click(screen.getByRole('button', { name: 'Download Manually' }))
     expect(openUrl).toHaveBeenCalledWith(
-      'https://github.com/GussCloud/dolphin/releases/tag/v1.4.200'
+      'https://github.com/evuptech/dolphin/releases/tag/v1.4.200'
     )
   })
 

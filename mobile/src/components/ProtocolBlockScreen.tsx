@@ -5,7 +5,7 @@ import { colors, radii, spacing, typography } from '../theme/mobile-theme'
 import type { CompatVerdict } from '../transport/protocol-compat'
 import type { MobileWebBundleCompatVerdict } from '../transport/mobile-web-bundle-compat'
 
-const RELEASES_URL = 'https://github.com/GussCloud/dolphin/releases'
+const RELEASES_URL = 'https://github.com/evuptech/dolphin/releases'
 const IOS_APP_STORE_URL = 'itms-apps://apps.apple.com/app/dolphin-ide/id6766130217'
 
 /** Every wall this screen renders: the protocol one and the bundle one. Both are terminal — there

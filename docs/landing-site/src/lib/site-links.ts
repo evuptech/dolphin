@@ -1,4 +1,4 @@
-export const GITHUB_REPO_URL = 'https://github.com/GussCloud/dolphin'
+export const GITHUB_REPO_URL = 'https://github.com/evuptech/dolphin'
 export const RELEASES_URL = `${GITHUB_REPO_URL}/releases`
 export const LATEST_RELEASE_URL = `${RELEASES_URL}/latest`
 export const WINDOWS_INSTALLER_URL = `${LATEST_RELEASE_URL}/download/dolphin-windows-setup.exe`

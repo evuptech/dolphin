@@ -8,7 +8,7 @@ const build = (tag: string): ReleaseBuild => ({
   channel: 'hourly',
   name: null,
   publishedAt: null,
-  releaseUrl: `https://github.com/GussCloud/dolphin-hourly/releases/tag/${tag}`,
+  releaseUrl: `https://github.com/evuptech/dolphin-hourly/releases/tag/${tag}`,
   installerUrl: null
 })
 

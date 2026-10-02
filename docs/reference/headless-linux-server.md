@@ -68,7 +68,7 @@ Download and make the AppImage executable:
 
 ```bash
 sudo mkdir -p /opt/dolphin
-sudo curl -L https://github.com/GussCloud/dolphin/releases/latest/download/dolphin-linux.AppImage \
+sudo curl -L https://github.com/evuptech/dolphin/releases/latest/download/dolphin-linux.AppImage \
   -o /opt/dolphin/dolphin-linux.AppImage
 sudo chmod +x /opt/dolphin/dolphin-linux.AppImage
 ```
@@ -597,7 +597,7 @@ recover_failed_upgrade() {
 trap recover_failed_upgrade EXIT
 
 # 1. Stage and verify the new build while the server stays online
-sudo curl -fL --retry 3 "https://github.com/GussCloud/dolphin/releases/download/${DOLPHIN_VERSION}/${DOLPHIN_ASSET}" \
+sudo curl -fL --retry 3 "https://github.com/evuptech/dolphin/releases/download/${DOLPHIN_VERSION}/${DOLPHIN_ASSET}" \
   -o /opt/dolphin/dolphin-linux.AppImage.new
 sudo chown root:root /opt/dolphin/dolphin-linux.AppImage.new
 sudo chmod 755 /opt/dolphin/dolphin-linux.AppImage.new

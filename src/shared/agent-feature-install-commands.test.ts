@@ -17,24 +17,24 @@ import {
 describe('agent feature skill commands', () => {
   it('builds a global install command by default', () => {
     expect(buildAgentFeatureSkillInstallCommand(['dolphin-cli'])).toBe(
-      'npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli --global'
+      'npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli --global'
     )
   })
 
   it('drops --global when installing locally', () => {
     expect(buildAgentFeatureSkillInstallCommand(['dolphin-cli'], { global: false })).toBe(
-      'npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli'
+      'npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli'
     )
   })
 
   it('repeats --skill per name for multi-skill installs', () => {
     expect(buildAgentFeatureSkillInstallCommand(['dolphin-cli', 'orchestration'])).toBe(
-      'npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli --skill orchestration --global'
+      'npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli --skill orchestration --global'
     )
     expect(buildAgentFeatureSkillInstallArgs(['dolphin-cli', 'orchestration'])).toEqual([
       'skills',
       'add',
-      'https://github.com/GussCloud/dolphin',
+      'https://github.com/evuptech/dolphin',
       '--skill',
       'dolphin-cli',
       '--skill',
@@ -79,7 +79,7 @@ describe('agent feature skill commands', () => {
     expect(
       buildAgentFeatureSkillInstallCommand(['dolphin-cli'], { yes: true, agents: ['universal'] })
     ).toBe(
-      'npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli --global --agent universal -y'
+      'npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli --global --agent universal -y'
     )
     expect(buildAgentFeatureSkillUpdateCommand(['dolphin-cli'], { global: false, yes: true })).toBe(
       'npx skills update dolphin-cli --project -y'

@@ -5,7 +5,7 @@ import { ThemeSwitch } from 'fumadocs-ui/layouts/shared/slots/theme-switch'
 
 async function getGithubStars(): Promise<number | undefined> {
   try {
-    const response = await fetch('https://api.github.com/repos/GussCloud/dolphin', {
+    const response = await fetch('https://api.github.com/repos/evuptech/dolphin', {
       headers: { Accept: 'application/vnd.github+json' },
       next: { revalidate: 3600 }
     })
@@ -89,7 +89,7 @@ export async function DocsHeader() {
             </span>
           </a>
           <a
-            href="https://github.com/GussCloud/dolphin"
+            href="https://github.com/evuptech/dolphin"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-[13px] font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"

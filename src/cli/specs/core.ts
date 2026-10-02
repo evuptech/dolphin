@@ -132,7 +132,7 @@ export const CORE_COMMAND_SPECS: CommandSpec[] = [
     examples: [
       'dolphin worktree create --name agent-task --agent codex --prompt "hi" --json',
       'dolphin worktree create --repo id:<repoId> --name related-task --json',
-      'dolphin worktree create --project github:GussCloud/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --name benchmark --json',
+      'dolphin worktree create --project github:evuptech/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --name benchmark --json',
       'dolphin worktree create --repo id:<repoId> --name linear-task --linear-issue https://linear.app/gusscloud/issue/STA-335/test-issue --json',
       'dolphin worktree create --repo id:<repoId> --name agent-task --agent codex --prompt "hi" --json',
       'dolphin worktree create --repo id:<repoId> --name folder-child --parent-worktree folder:<folderId> --json',

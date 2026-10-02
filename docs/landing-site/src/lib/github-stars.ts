@@ -1,6 +1,6 @@
 export async function getGithubStars(): Promise<number | undefined> {
   try {
-    const response = await fetch('https://api.github.com/repos/GussCloud/dolphin', {
+    const response = await fetch('https://api.github.com/repos/evuptech/dolphin', {
       headers: { Accept: 'application/vnd.github+json' },
       next: { revalidate: 3600 }
     })

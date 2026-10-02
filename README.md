@@ -16,7 +16,7 @@
   Codex, Claude Code, OpenCode, Pi or any other terminal agent.
 </p>
 
-<h3 align="center"><a href="https://github.com/GussCloud/dolphin/releases/latest"><ins>Download Dolphin for Windows</ins></a></h3>
+<h3 align="center"><a href="https://github.com/evuptech/dolphin/releases/latest"><ins>Download Dolphin for Windows</ins></a></h3>
 
 ## Features
 
@@ -58,7 +58,7 @@ Pair an Android phone with the desktop app to watch your agents and send follow-
 
 ### Windows
 
-Download `dolphin-windows-setup.exe` from the [latest release](https://github.com/GussCloud/dolphin/releases/latest). The installer is not code-signed yet, so Windows SmartScreen may ask you to confirm before running it. The app updates itself from the same releases.
+Download `dolphin-windows-setup.exe` from the [latest release](https://github.com/evuptech/dolphin/releases/latest). The installer is not code-signed yet, so Windows SmartScreen may ask you to confirm before running it. The app updates itself from the same releases.
 
 ### Android
 

@@ -6,7 +6,7 @@
 #   bash config/scripts/macos-launch-diagnostics.sh --tag v1.4.42-rc.1
 set -euo pipefail
 
-REPO="${DOLPHIN_DIAGNOSTIC_REPO:-GussCloud/dolphin}"
+REPO="${DOLPHIN_DIAGNOSTIC_REPO:-evuptech/dolphin}"
 TAG="${DOLPHIN_DIAGNOSTIC_TAG:-}"
 KEEP=0
 
