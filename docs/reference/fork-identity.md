@@ -28,9 +28,9 @@ Dolphin's Windows installers are unsigned: there is no SignPath certificate. Unl
 
 ## Release repository
 
-Releases publish to `evuptech/dolphin` (moved from `GussCloud/dolphin` at v0.1.30). Both release workflows run only when `github.repository` equals that slug, and publish with the repo's own `GITHUB_TOKEN`, so the repo needs Actions enabled with write workflow permissions. The Android workflow also reads `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, and `ANDROID_KEY_PASSWORD`; it must be the same key the previous APKs used, or phones must uninstall before updating.
+Releases publish to `evuptech/dolphin` (moved from `GussCloud/dolphin` at v0.1.30). Both release workflows run only when `github.repository` equals that slug, and publish with the repo's own `GITHUB_TOKEN`, so the repo needs Actions enabled with write workflow permissions. The Android workflow also reads `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, and `ANDROID_KEY_PASSWORD` (a PKCS12 keystore, alias `dolphin`). Mobile 0.0.60 is the first APK signed with that key: phones with an earlier APK uninstall once, and every later release must keep the same key.
 
-Installs at v0.1.29 or older poll `GussCloud/dolphin`. They reach the new feed only after one release built from this identity is also published there.
+Installs at v0.1.29 or older poll `GussCloud/dolphin` and are not migrated; reinstall from this repo's releases.
 
 ## Endpoints
 
