@@ -20,13 +20,13 @@ Use `npx skills add` with the public Dolphin repo and the skill name. Default ag
 
 | Skill                                                     | Install                                                                                          | Use it for                                                    |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
-| [`dolphin-cli`](#dolphin-cli)                             | `npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli --global`               | Worktrees, terminals, files, automations, embedded browser.   |
-| [`orchestration`](#orchestration)                         | `npx skills add https://github.com/GussCloud/dolphin --skill orchestration --global`             | Multi-agent Runs, tasks, supervised workers, messages, gates. |
-| [`computer-use`](#computer-use)                           | `npx skills add https://github.com/GussCloud/dolphin --skill computer-use --global`              | Desktop apps via accessibility trees and safe UI actions.     |
-| [`dolphin-linear`](#dolphin-linear)                       | `npx skills add https://github.com/GussCloud/dolphin --skill dolphin-linear --global`            | Linear ticket read/write through `dolphin linear`.            |
-| [`dolphin-emulator`](#dolphin-emulator)                   | `npx skills add https://github.com/GussCloud/dolphin --skill dolphin-emulator --global`          | iOS Simulator control.                                        |
-| [`dolphin-emulator-android`](#dolphin-emulator-android)   | `npx skills add https://github.com/GussCloud/dolphin --skill dolphin-emulator-android --global`  | Android emulator/device via adb.                              |
-| [`dolphin-per-workspace-env`](#dolphin-per-workspace-env) | `npx skills add https://github.com/GussCloud/dolphin --skill dolphin-per-workspace-env --global` | Per-workspace environment recipes (`dolphin.yaml`).           |
+| [`dolphin-cli`](#dolphin-cli)                             | `npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli --global`               | Worktrees, terminals, files, automations, embedded browser.   |
+| [`orchestration`](#orchestration)                         | `npx skills add https://github.com/evuptech/dolphin --skill orchestration --global`             | Multi-agent Runs, tasks, supervised workers, messages, gates. |
+| [`computer-use`](#computer-use)                           | `npx skills add https://github.com/evuptech/dolphin --skill computer-use --global`              | Desktop apps via accessibility trees and safe UI actions.     |
+| [`dolphin-linear`](#dolphin-linear)                       | `npx skills add https://github.com/evuptech/dolphin --skill dolphin-linear --global`            | Linear ticket read/write through `dolphin linear`.            |
+| [`dolphin-emulator`](#dolphin-emulator)                   | `npx skills add https://github.com/evuptech/dolphin --skill dolphin-emulator --global`          | iOS Simulator control.                                        |
+| [`dolphin-emulator-android`](#dolphin-emulator-android)   | `npx skills add https://github.com/evuptech/dolphin --skill dolphin-emulator-android --global`  | Android emulator/device via adb.                              |
+| [`dolphin-per-workspace-env`](#dolphin-per-workspace-env) | `npx skills add https://github.com/evuptech/dolphin --skill dolphin-per-workspace-env --global` | Per-workspace environment recipes (`dolphin.yaml`).           |
 
 ## Hybrid stubs vs the live guide
 
@@ -106,7 +106,7 @@ dolphin skills share --skill frontend --skill testing --bundle-name "Team Toolki
 ## dolphin-cli
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill dolphin-cli --global
+npx skills add https://github.com/evuptech/dolphin --skill dolphin-cli --global
 ```
 
 After install, load the version-matched command guide with `dolphin skills get dolphin-cli`. See [Dolphin CLI](/docs/cli/overview).
@@ -114,7 +114,7 @@ After install, load the version-matched command guide with `dolphin skills get d
 ## orchestration
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill orchestration --global
+npx skills add https://github.com/evuptech/dolphin --skill orchestration --global
 ```
 
 Use this when an agent should coordinate other agents through Runs, tasks, supervised workers, and decision gates. See [Orchestration](/docs/cli/orchestration). Always load `dolphin skills get orchestration --full` before mutating orchestration state — the legacy `orchestration run` command is retired.
@@ -122,7 +122,7 @@ Use this when an agent should coordinate other agents through Runs, tasks, super
 ## computer-use
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill computer-use --global
+npx skills add https://github.com/evuptech/dolphin --skill computer-use --global
 ```
 
 Use this when an agent needs to inspect and operate local desktop app windows. See [Computer use](/docs/cli/computer-use).
@@ -130,7 +130,7 @@ Use this when an agent needs to inspect and operate local desktop app windows. S
 ## dolphin-linear
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill dolphin-linear --global
+npx skills add https://github.com/evuptech/dolphin --skill dolphin-linear --global
 ```
 
 Agents should load `dolphin skills get dolphin-linear` before mutating tickets. Covers `issue --full`, `save-issue`, `list-issues`, relations, completion attach+comment flow, and untrusted-ticket rules. Existing `linear-tickets` installs still resolve. See [CLI reference → Linear](/docs/cli/reference#linear).
@@ -138,7 +138,7 @@ Agents should load `dolphin skills get dolphin-linear` before mutating tickets. 
 ## dolphin-emulator
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill dolphin-emulator --global
+npx skills add https://github.com/evuptech/dolphin --skill dolphin-emulator --global
 ```
 
 Use this when an agent should control an iOS Simulator from inside Dolphin through `dolphin emulator` commands.
@@ -146,7 +146,7 @@ Use this when an agent should control an iOS Simulator from inside Dolphin throu
 ## dolphin-emulator-android
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill dolphin-emulator-android --global
+npx skills add https://github.com/evuptech/dolphin --skill dolphin-emulator-android --global
 ```
 
 Use for adb-connected Android AVDs/devices: list/boot, tap/swipe/type, hardware buttons, install/launch, permissions, accessibility tree, logcat. Load details with `dolphin skills get dolphin-emulator-android`.
@@ -154,7 +154,7 @@ Use for adb-connected Android AVDs/devices: list/boot, tap/swipe/type, hardware 
 ## dolphin-per-workspace-env
 
 ```bash
-npx skills add https://github.com/GussCloud/dolphin --skill dolphin-per-workspace-env --global
+npx skills add https://github.com/evuptech/dolphin --skill dolphin-per-workspace-env --global
 ```
 
 Use when setting up or debugging per-workspace environment recipes in `dolphin.yaml`. See [Ways to run Dolphin](/docs/ways-to-run#4-cloud-vms-per-workspace-environments).

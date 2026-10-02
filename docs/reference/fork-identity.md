@@ -10,7 +10,7 @@ The identity is defined in `src/shared/fork-identity.ts`. The CommonJS electron-
 | userData                   | `%APPDATA%\dolphin`                  | `configure-process.ts`, CLI `metadata.ts`, `codex-home-paths.ts`, builder `extraMetadata.name`                       |
 | Relocated daemon host      | `%LOCALAPPDATA%\Dolphin\daemon-host` | `daemon-host-relocation.ts`, NSIS `${PRODUCT_NAME}`                                                                  |
 | Markdown ProgID            | `Dolphin.Markdown`                   | NSIS `${PRODUCT_NAME}`                                                                                               |
-| Update feed                | `GussCloud/dolphin`                  | `release-channel.ts`, `updater-setup.ts`, `updater-release-feed.ts`, `updater-prerelease-feed.ts`, builder `publish` |
+| Update feed                | `evuptech/dolphin`                  | `release-channel.ts`, `updater-setup.ts`, `updater-release-feed.ts`, `updater-prerelease-feed.ts`, builder `publish` |
 | Installer                  | `dolphin-windows-setup.exe`          | builder `nsis.artifactName`                                                                                          |
 
 ## CLI
@@ -26,14 +26,20 @@ The command is `dolphin` on macOS and Windows and `dolphin-ide` on Linux and WSL
 
 Dolphin's Windows installers are unsigned: there is no SignPath certificate. Unless `DOLPHIN_WIN_SIGNPATH_SIGNED=1` is set, the builder omits `publisherName` and sets `verifyUpdateCodeSignature: false`. Without that, every update would fail Authenticode verification. Windows SmartScreen warns on first run.
 
+## Release repository
+
+Releases publish to `evuptech/dolphin` (moved from `GussCloud/dolphin` at v0.1.30). Both release workflows run only when `github.repository` equals that slug, and publish with the repo's own `GITHUB_TOKEN`, so the repo needs Actions enabled with write workflow permissions. The Android workflow also reads `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, and `ANDROID_KEY_PASSWORD`; it must be the same key the previous APKs used, or phones must uninstall before updating.
+
+Installs at v0.1.29 or older poll `GussCloud/dolphin`. They reach the new feed only after one release built from this identity is also published there.
+
 ## Endpoints
 
 Every link and service the app reaches is defined in `src/shared/fork-identity.ts`.
 
 | What                                            | Now                                                                            |
 | ----------------------------------------------- | ------------------------------------------------------------------------------ |
-| Skills installed into agents (`npx skills add`) | `GussCloud/dolphin`                                                            |
-| GitHub links, issues, star prompt, share card   | `GussCloud/dolphin`                                                            |
+| Skills installed into agents (`npx skills add`) | `evuptech/dolphin`                                                            |
+| GitHub links, issues, star prompt, share card   | `evuptech/dolphin`                                                            |
 | Docs, telemetry notice                          | `https://dolphin.guss.dev.br/docs`                                             |
 | Changelog page                                  | GitHub releases of this repo                                                   |
 | Update changelog/nudge feeds, plugin kill-list  | `https://dolphin.guss.dev.br/{whats-new,plugins}/...` (fail soft while absent) |

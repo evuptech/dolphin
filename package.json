@@ -2,7 +2,7 @@
   "name": "dolphin",
   "version": "0.1.29",
   "description": "Next-gen IDE for parallel agentic development",
-  "homepage": "https://github.com/GussCloud/dolphin",
+  "homepage": "https://github.com/evuptech/dolphin",
   "author": "gusscloud",
   "bin": {
     "dolphin": "./out/cli/index.js",

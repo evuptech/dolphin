@@ -73,10 +73,10 @@ export default function AboutScreen({
           style={({ pressed }) => [styles.row, pressed && styles.rowPressed]}
           accessibilityRole="button"
           accessibilityLabel="Dolphin source code"
-          onPress={() => openLink('https://github.com/GussCloud/dolphin')}
+          onPress={() => openLink('https://github.com/evuptech/dolphin')}
         >
           <GithubIcon />
-          <Text style={styles.rowValue}>GussCloud/dolphin</Text>
+          <Text style={styles.rowValue}>evuptech/dolphin</Text>
         </Pressable>
         <View style={styles.separator} />
         <Pressable

@@ -12,7 +12,7 @@ export const FORK_IDENTITY = {
   linuxCliCommandName: 'dolphin-ide',
   devCliCommandName: 'dolphin-dev',
   installerArtifactBaseName: 'dolphin-windows-setup',
-  releaseOwner: 'GussCloud',
+  releaseOwner: 'evuptech',
   releaseRepo: 'dolphin'
 } as const
 

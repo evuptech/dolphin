@@ -22,7 +22,7 @@ export const PROJECT_COMMAND_SPECS: CommandSpec[] = [
     ],
     examples: [
       'dolphin project setups',
-      'dolphin project setups --project github:GussCloud/dolphin',
+      'dolphin project setups --project github:evuptech/dolphin',
       'dolphin project setups --host local',
       'dolphin project setups --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3'
     ]
@@ -39,8 +39,8 @@ export const PROJECT_COMMAND_SPECS: CommandSpec[] = [
       'SSH targets are set up through the desktop UI because the desktop client owns SSH connections.'
     ],
     examples: [
-      'dolphin project setup-existing-folder --project github:GussCloud/dolphin --host local --path ~/dolphin',
-      'dolphin project setup-existing-folder --project github:GussCloud/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --path /home/me/dolphin --kind git --json'
+      'dolphin project setup-existing-folder --project github:evuptech/dolphin --host local --path ~/dolphin',
+      'dolphin project setup-existing-folder --project github:evuptech/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --path /home/me/dolphin --kind git --json'
     ]
   },
   {
@@ -55,8 +55,8 @@ export const PROJECT_COMMAND_SPECS: CommandSpec[] = [
       'SSH targets are cloned through the desktop UI because the desktop client owns SSH connections.'
     ],
     examples: [
-      'dolphin project setup-clone --project github:GussCloud/dolphin --host local --url https://github.com/GussCloud/dolphin.git --destination ~/src',
-      'dolphin project setup-clone --project github:GussCloud/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --url https://github.com/GussCloud/dolphin.git --destination /srv --json'
+      'dolphin project setup-clone --project github:evuptech/dolphin --host local --url https://github.com/evuptech/dolphin.git --destination ~/src',
+      'dolphin project setup-clone --project github:evuptech/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --url https://github.com/evuptech/dolphin.git --destination /srv --json'
     ]
   },
   {
@@ -83,7 +83,7 @@ export const PROJECT_COMMAND_SPECS: CommandSpec[] = [
       'Use setup-existing-folder when Dolphin should import and manage an actual checkout path now.'
     ],
     examples: [
-      'dolphin project setup-create --project github:GussCloud/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --state setting-up --method provisioned --json'
+      'dolphin project setup-create --project github:evuptech/dolphin --host runtime:03ef704c-b180-4b10-998d-e28fbd5de9a3 --state setting-up --method provisioned --json'
     ]
   },
   {
@@ -107,8 +107,8 @@ export const PROJECT_COMMAND_SPECS: CommandSpec[] = [
       'Path and availability state changes are only supported for independent setup records.'
     ],
     examples: [
-      'dolphin project setup-update --setup github:GussCloud/dolphin::gpu --display-name "GPU VM"',
-      'dolphin project setup-update --setup github:GussCloud/dolphin::gpu --path /srv/dolphin --state ready --json'
+      'dolphin project setup-update --setup github:evuptech/dolphin::gpu --display-name "GPU VM"',
+      'dolphin project setup-update --setup github:evuptech/dolphin::gpu --path /srv/dolphin --state ready --json'
     ]
   },
   {
@@ -121,6 +121,6 @@ export const PROJECT_COMMAND_SPECS: CommandSpec[] = [
       'Independent setups are removed directly.',
       'Repo-backed setups remove the registered repo compatibility record.'
     ],
-    examples: ['dolphin project setup-delete --setup github:GussCloud/dolphin::gpu --json']
+    examples: ['dolphin project setup-delete --setup github:evuptech/dolphin::gpu --json']
   }
 ]

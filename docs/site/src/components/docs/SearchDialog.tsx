@@ -251,7 +251,7 @@ export default function SearchDialog({ dialogId = 'docs-search-dialog', onClose 
               </div>
               <div className="flex flex-col gap-2 sm:flex-row">
                 <a
-                  href="https://github.com/GussCloud/dolphin"
+                  href="https://github.com/evuptech/dolphin"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={onClose}

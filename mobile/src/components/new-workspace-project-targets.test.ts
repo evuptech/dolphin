@@ -33,7 +33,7 @@ describe('new workspace project targets', () => {
         displayName: 'dolphin',
         path: '/src/dolphin',
         gitRemoteIdentity: {
-          canonicalKey: 'github.com/GussCloud/dolphin',
+          canonicalKey: 'github.com/evuptech/dolphin',
           remoteName: 'origin',
           remoteUrl: 'git@github.com:gusscloud/dolphin.git'
         }

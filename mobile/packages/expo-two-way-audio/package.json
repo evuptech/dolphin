@@ -9,15 +9,15 @@
     "expo-two-way-audio",
     "react-native"
   ],
-  "homepage": "https://github.com/GussCloud/dolphin/tree/main/mobile/packages/expo-two-way-audio",
+  "homepage": "https://github.com/evuptech/dolphin/tree/main/mobile/packages/expo-two-way-audio",
   "bugs": {
-    "url": "https://github.com/GussCloud/dolphin/issues"
+    "url": "https://github.com/evuptech/dolphin/issues"
   },
   "license": "MIT",
   "author": "Dolphin contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GussCloud/dolphin.git",
+    "url": "git+https://github.com/evuptech/dolphin.git",
     "directory": "mobile/packages/expo-two-way-audio"
   },
   "main": "src/index.ts",

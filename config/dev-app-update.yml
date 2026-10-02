@@ -1,4 +1,4 @@
 provider: github
-owner: GussCloud
+owner: evuptech
 repo: dolphin
 updaterCacheDirName: dolphin-updater

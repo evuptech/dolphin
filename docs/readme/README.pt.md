@@ -16,7 +16,7 @@
   Codex, Claude Code, OpenCode, Pi ou qualquer outro agente de terminal.
 </p>
 
-<h3 align="center"><a href="https://github.com/GussCloud/dolphin/releases/latest"><ins>Baixar o Dolphin para Windows</ins></a></h3>
+<h3 align="center"><a href="https://github.com/evuptech/dolphin/releases/latest"><ins>Baixar o Dolphin para Windows</ins></a></h3>
 
 ## Recursos
 
@@ -35,7 +35,7 @@
 
 ### Windows
 
-Baixe o `dolphin-windows-setup.exe` da [release mais recente](https://github.com/GussCloud/dolphin/releases/latest). O instalador ainda não é assinado, então o SmartScreen do Windows pode pedir confirmação antes de executar. O app se atualiza sozinho a partir das mesmas releases.
+Baixe o `dolphin-windows-setup.exe` da [release mais recente](https://github.com/evuptech/dolphin/releases/latest). O instalador ainda não é assinado, então o SmartScreen do Windows pode pedir confirmação antes de executar. O app se atualiza sozinho a partir das mesmas releases.
 
 ### Android
 

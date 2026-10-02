@@ -48,7 +48,7 @@ export function DocsFooter() {
               </li>
               <li>
                 <a
-                  href="https://github.com/GussCloud/dolphin"
+                  href="https://github.com/evuptech/dolphin"
                   className="rounded-md px-1 py-0.5 transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
                 >
                   GitHub
@@ -80,17 +80,17 @@ export function DocsFooter() {
           <p>
             © {new Date().getFullYear()} Dolphin ·{' '}
             <a
-              href="https://github.com/GussCloud/dolphin/blob/main/LICENSE"
+              href="https://github.com/evuptech/dolphin/blob/main/LICENSE"
               className="rounded-sm underline decoration-border underline-offset-4 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
             >
               MIT licensed
             </a>
           </p>
           <a
-            href="https://github.com/GussCloud/dolphin/tree/main/docs/site"
+            href="https://github.com/evuptech/dolphin/tree/main/docs/site"
             className="rounded-sm text-xs underline decoration-border underline-offset-4 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
           >
-            Docs source: docs/site in GussCloud/dolphin
+            Docs source: docs/site in evuptech/dolphin
           </a>
         </div>
       </div>
